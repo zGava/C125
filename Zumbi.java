@@ -4,10 +4,17 @@ public class Zumbi {
     String nome;
 
     double mostraVida(){
-        return 0;
+        return vida;
     }
-    void transfereVida(Zumbi zumbiAlvo, double quantia){
-        vida-=quantia;
-        zumbiAlvo.vida+=quantia;
+    boolean transfereVida(Zumbi zumbiAlvo, double quantia){
+        if (vida>quantia){
+            vida-=quantia;
+            zumbiAlvo.vida+=quantia;
+            return true;
+        }
+        else {
+            System.out.println("Não foi possível fazer a transferência da vida :(");
+            return false;
+        }
     }
 }
