@@ -10,10 +10,19 @@ public class Main {
         System.out.println("Vida do zumbi z1 = "+z1.vida);
         System.out.println("Vida do zumbi z1 = "+z2.vida);
 
-        z1=z2;
+        if(z1.transfereVida(z2,100)){
+            System.out.println("Transferindo 100 de vida do z1 para z2: ");
+            System.out.println("Vida do zumbi z1 = "+z1.vida);
+            System.out.println("Vida do zumbi z1 = "+z2.vida);
+        }
 
-        System.out.println("Sendo z1=z2");
-        System.out.println("Vida do zumbi z1 = "+z1.vida);
-        System.out.println("Vida do zumbi z2 = "+z2.vida);
+        if(z1.transfereVida(z2, 50)){
+            System.out.println("Transferindo 50 de vida do z1 para z2: ");
+            System.out.println("Vida do zumbi z1 = "+z1.vida);
+            System.out.println("Vida do zumbi z1 = "+z2.vida);
+        }
+        else{
+            System.out.println("Não houve alteração na vida xD ");
+        }
     }
 }
