@@ -1,2 +1,2 @@
 # C206
-Repositório criado sobre Programação Orientada a Objeto Java :)
+Repositório criado das aulas sobre Programação Orientada a Objeto Java :)
